@@ -29,10 +29,10 @@ public:
         {
             if (m[i] > 0)
             {
-                if (!find(result, i)) {
-                    result.push_back(i);
-                }
-                //result.push_back(i);
+                // if (!find(result, i)) {
+                //     result.push_back(i);
+                // }
+                result.push_back(i);
                 m[i]--;
             }
         }
@@ -42,8 +42,8 @@ public:
 
 int main() {
     Solution s;
-    vector<int> nums1 = {1,2,2,1};
-    vector<int> nums2 = {2,2};
+    vector<int> nums1 = {4,9,5};
+    vector<int> nums2 = {9,4,9,8,4};
     vector<int> nums3 = s.intersection(nums1, nums2);
     for (auto &i : nums3)
     {
